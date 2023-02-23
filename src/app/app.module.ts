@@ -4,11 +4,13 @@ import { CocktailListComponent } from '../components/cocktail-list/cocktail-list
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NasaImgComponent } from 'src/components/nasa-img/nasa-img.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CocktailListComponent,
+    NasaImgComponent,
   ],
   imports: [
     BrowserModule,
