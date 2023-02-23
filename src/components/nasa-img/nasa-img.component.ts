@@ -8,7 +8,8 @@ import { NasaService } from '../../services/nasa.service';
 })
 export class NasaImgComponent implements OnInit {
   imageUrl: string = '';
-
+  imgOfTheDay: string = this.imageUrl;
+  
   constructor(private nasaService: NasaService) { }
 
   ngOnInit() {
