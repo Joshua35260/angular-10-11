@@ -1,17 +1,32 @@
-{
-  "cocktail1": {
-      "name": "Sex on the beach",
-      "price": 10,
-      "img": "relative-path-to-the-picture"
+[
+  { "id": 1,
+    "nom": "Margarita",
+    "prix": 7.5,
+    "image": "../assets/images/margarita.jpg"
   },
-  "cocktail2": {
-      "name": "Marguarita",
-      "price": 13,
-      "img": "relative-path-to-the-picture"
+  { "id": 2,
+    "nom": "Cosmopolitan",
+    "prix": 8.0,
+    "image": "../assets/images/cosmopolitan.jpg"
   },
-  "cocktail3": {
-      "name": "Martini",
-      "price": 8,
-      "img": "relative-path-to-the-picture"
+  { "id": 3,
+    "nom": "Piña Colada",
+    "prix": 9.0,
+    "image": "../assets/images/pina-colada.jpg"
+  },
+  { "id": 4,
+    "nom": "Mojito",
+    "prix": 8.5,
+    "image": "../assets/images/mojito.jpg"
+  },
+  { "id": 4,
+    "nom": "Blue Lagoon",
+    "prix": 9.5,
+    "image": "../assets/images/blue-lagoon.jpg"
+  },
+  { "id": 5,
+    "nom": "Bloody Mary",
+    "prix": 8.0,
+    "image": "../assets/images/bloody-mary.jpg"
   }
-}
+]

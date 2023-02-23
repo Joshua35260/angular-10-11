@@ -9,17 +9,23 @@ import { HttpClient } from '@angular/common/http';
 })
 export class CocktailService {
 
-constructor() { }
+constructor(public http: HttpClient) { }
 
+// version locale //
 
-public getCocktails(): Cocktail[] {
-  return [
-  { nom: 'Margarita', prix: 7.50, image: '../assets/images/margarita.jpg' },
-  { nom: 'Cosmopolitan', prix: 8.00, image: '../assets/images/cosmopolitan.jpg' },
-  { nom: 'Piña Colada', prix: 9.00, image: '../assets/images/pina-colada.jpg' },
-  { nom: 'Mojito', prix: 8.50, image: '../assets/images/mojito.jpg' },
-  { nom: 'Blue Lagoon', prix: 9.50, image: '../assets/images/blue-lagoon.jpg' },
-  { nom: 'Bloody Mary', prix: 8.00, image: '../assets/images/bloody-mary.jpg' },
-  ];
+// public getCocktails(): Cocktail[] {
+//   return [
+//   { nom 'Margarita', prix: 7.50, image: '../assets/images/margarita.jpg' },
+//   { nom: 'Cosmopolitan', prix: 8.00, image: '../assets/images/cosmopolitan.jpg' },
+//   { nom: 'Piña Colada', prix: 9.00, image: '../assets/images/pina-colada.jpg' },
+//   { nom: 'Mojito', prix: 8.50, image: '../assets/images/mojito.jpg' },
+//   { nom: 'Blue Lagoon', prix: 9.50, image: '../assets/images/blue-lagoon.jpg' },
+//   { nom: 'Bloody Mary', prix: 8.00, image: '../assets/images/bloody-mary.jpg' },
+//   ];
+// }
+
+getCocktails(): Observable<Cocktail[]> {
+  return this.http.get<Cocktail[]>("./assets/data/cocktails.json");
 }
+
 }
